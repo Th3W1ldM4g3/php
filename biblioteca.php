@@ -1,6 +1,6 @@
 <?php
 
-    class Biblioteca
+    class biblioteca
     {
         public string $nome;
         private array $livros ;
@@ -13,7 +13,7 @@
 
         public function adicionarLivro(string $titulo)
         {
-            $this->livros[] += $titulo;
+            $this->livros[] = $titulo;
         }
 
         public function buscarLivro(string $termo)
@@ -31,7 +31,7 @@
         {
             $lista = "";
             foreach ($this->livros as $livro) {
-                $lista .= ", {$livro}";
+                $lista .= "<br>{$livro}";
             }
             return $lista;
         }
@@ -43,6 +43,6 @@
     $biblioteca->adicionarLivro("Dom Casmurro");
     $biblioteca->adicionarLivro("O Hobbit");
 
-    echo $biblioteca->buscarLivro("O");
+    print_r($biblioteca->buscarLivro("HO"));
 
     echo $biblioteca->listarLivros();
