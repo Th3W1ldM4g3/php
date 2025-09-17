@@ -8,7 +8,7 @@
         public function __construct($nome, $matricula, array $notas) {
             $this->nome = $nome;
             $this->matricula = $matricula;
-            $this->notas[] = $notas;
+            $this->notas = $notas;
         }
 
         public function adicionarNota(float $nota) {
@@ -20,6 +20,7 @@
                 $this->mediaNotas += $x;
             }
             $this->mediaNotas /= count($this->notas);
+            return $this->mediaNotas;
         }
 
         public function aprovado(){

@@ -30,5 +30,5 @@
         }
     }
 
-    $teste = new produto('Nome Teste', 10.0, 20.0);
-    echo $teste->resumo();
+    // $teste = new produto('Nome Teste', 10.0, 20.0);
+    // echo $teste->resumo();
